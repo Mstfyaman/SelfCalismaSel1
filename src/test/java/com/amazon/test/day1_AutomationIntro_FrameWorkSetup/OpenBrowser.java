@@ -4,6 +4,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import io.github.bonigarcia.wdm.managers.ChromeDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class OpenBrowser {
 
@@ -15,6 +16,11 @@ public class OpenBrowser {
            3. driver a testini yapacağımız web sitesine bizi götürmesini isteyeceğiz
 
      */
+
+
+       //WebDriverManager.firefoxdriver().setup();    // burasıda firefox browser ile yapımı
+       // WebDriver driver= new FirefoxDriver();
+
 
 
         WebDriverManager.chromedriver().setup();  // 1.   chromu hazır hale getirir.
