@@ -12,12 +12,12 @@ public class BeforeAfterMethod {
     @Test
     @Ignore                                          // @Ignore ile testi comment ettik.
     public void test1() {
-        System.out.println("First Test First Test Case");
+        System.out.println("First Test Case");
     }
 
     @Test
     public void test2() {
-        System.out.println("Second Test Second Test Case");
+        System.out.println("Second Test Case");
     }
 
     //  @Test                                                 //  @Testin başına // koyunca comment e yarum a alır. ignorla aynı işlev
