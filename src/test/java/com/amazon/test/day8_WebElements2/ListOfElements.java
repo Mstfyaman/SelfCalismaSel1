@@ -34,7 +34,7 @@ public class ListOfElements {
         driver.get("https://www.krafttechexlab.com/javascript/clicks");
 
         List<WebElement> buttons =driver.findElements(By.xpath("//button[@class='btn btn-primary']"));
-        System.out.println("button.size() = " + buttons.size());  // içerisinde kaç tane elaman var diy sorduk
+        System.out.println("button.size() = " + buttons.size());  // içerisinde kaç tane elaman var diye sorduk
         Assert.assertEquals(buttons.size(),4); // içerisinde 4 tane eleman var mı? diye doğruladık
 
         for (WebElement button : buttons){
