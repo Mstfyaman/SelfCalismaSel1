@@ -55,6 +55,37 @@ public class IframeTest {
         driver.switchTo().frame(iframe);
         textArea.clear();
         textArea.sendKeys("This is third way");
+    }
+
+    @Test
+    public void nestedIframe() {
+
+        driver.get("https://the-internet.herokuapp.com/nested_frames");
+
+        // switch to middle frame and get middle text
+
+        driver.switchTo().frame("frame-top");
+        driver.switchTo().frame("frame-middle");
+        System.out.println("driver.findElement(By.cssSelector(\"#content\")).getText() = " + driver.findElement(By.cssSelector("#content")).getText());
+
+        // got ro Right frame ang get text
+
+
+        driver.switchTo().parentFrame(); // selenium switch to parent
+       // driver.switchTo().defaultContent(); // selenium switch to top ( grand parent ) burdan sonra tekrar frame-top a inmemek gerekir
+        driver.switchTo().frame("frame-right");
+        System.out.println("driver.findElement(By.tagName(\"body\")).getText() = " + driver.findElement(By.tagName("body")).getText());
+
+
+        // go to bottom frame and get text
+
+        driver.switchTo().defaultContent();
+        driver.switchTo().frame("frame-bottom");
+        System.out.println("driver.findElement(By.tagName(\"body\")).getText() = " + driver.findElement(By.tagName("body")).getText());
+
 
     }
+
+
+
 }
