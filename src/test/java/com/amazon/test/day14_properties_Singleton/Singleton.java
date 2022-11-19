@@ -1,5 +1,7 @@
 package com.amazon.test.day14_properties_Singleton;
 
+import org.testng.annotations.Test;
+
 public class Singleton {
 
     // singleton class will have private constructor
@@ -24,7 +26,6 @@ public class Singleton {
         }
         return str;
     }
-
 
 
 
