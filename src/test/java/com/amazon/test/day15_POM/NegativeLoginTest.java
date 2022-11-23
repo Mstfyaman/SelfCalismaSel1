@@ -50,8 +50,6 @@ public class NegativeLoginTest extends TestBase {
 
         driver.get(ConfigurationReader.get("url"));
 
-
-
         loginPages.userNameInput_loc.sendKeys("someusername");
         Thread.sleep(1000);
         loginPages.passwordInput_loc.sendKeys(ConfigurationReader.get("password"));

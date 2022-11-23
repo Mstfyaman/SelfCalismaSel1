@@ -1,11 +1,12 @@
 package com.amazon.pages;
 
+import com.amazon.utilities.ConfigurationReader;
 import com.amazon.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPages {
+public class LoginPages extends BasePage {
 
     public LoginPages(){
         PageFactory.initElements(Driver.get(),this);
@@ -22,6 +23,15 @@ public class LoginPages {
 
     @FindBy(xpath = "//*[contains(text(),'Email address or password is incorrect. Please check')]")
     public WebElement warningMessage_loc;
+
+    public void loginUser(){
+        String username= ConfigurationReader.get("username");
+        String password= ConfigurationReader.get("password");
+
+        userNameInput_loc.sendKeys(username);
+        passwordInput_loc.sendKeys(password);
+        loginButton_loc.click();
+    }
 
 
 

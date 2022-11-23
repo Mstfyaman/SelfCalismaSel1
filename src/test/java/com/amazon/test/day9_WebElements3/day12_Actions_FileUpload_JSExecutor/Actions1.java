@@ -1,4 +1,4 @@
-package com.amazon.test.day12_Actions_FileUpload_JSExecutor;
+package com.amazon.test.day9_WebElements3.day12_Actions_FileUpload_JSExecutor;
 
 import com.amazon.utilities.WebDriverFactory;
 import org.openqa.selenium.Alert;
