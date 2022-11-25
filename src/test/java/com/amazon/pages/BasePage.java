@@ -3,13 +3,17 @@ package com.amazon.pages;
 import com.amazon.utilities.BrowserUtils;
 import com.amazon.utilities.Driver;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
-public class BasePage {
+public abstract class BasePage {
+
+    WebDriver driver;
 
     public  BasePage(){
         PageFactory.initElements(Driver.get(),this);
+        driver=Driver.get();
     }
 
     public void navigateToModule(String tab, String module){

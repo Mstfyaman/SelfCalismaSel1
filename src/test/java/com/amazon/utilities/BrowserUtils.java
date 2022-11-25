@@ -61,6 +61,14 @@ public class BrowserUtils {
         actions.moveToElement(element).perform();
     }
 
+
+    public static void dragAndDropBy(WebElement element,int x,int y){
+        Actions actions =new Actions(Driver.get());
+        actions.dragAndDropBy(element,x,y).perform();
+    }
+
+
+
     /**
      * return a list of string from a list of elements
      *
