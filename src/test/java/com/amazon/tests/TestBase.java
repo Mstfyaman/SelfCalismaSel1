@@ -35,6 +35,8 @@ public class TestBase {
        // create a report path
        String projecPath = System.getProperty("user.dir");  // projenin pathini alır.
        String reportPath= projecPath+ "/test-output/report.html";  // bu projenin ve raporun ismini verir.
+//     String date = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());   // çoklu almak istersek burası ve alt satırı aç-üstü kapat
+//     String reportPath=projectPath + "/test-output/report"+date+".html";
 
        // initialize the html report with the reportPath
        htmlReporter = new ExtentHtmlReporter(reportPath);
@@ -72,7 +74,7 @@ public class TestBase {
 
     }
 
-    @AfterMethod
+    @AfterClass
     public void tearDown(ITestResult result) throws InterruptedException, IOException {
 
        // if test fails

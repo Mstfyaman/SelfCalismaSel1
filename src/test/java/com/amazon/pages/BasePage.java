@@ -18,7 +18,7 @@ public abstract class BasePage {
 
     public void navigateToModule(String tab, String module){
 
-        String tabLocator= "//span[.='"+tab+"']";
+        String tabLocator= "//li[@class='nav-item']//span[.='"+tab+"']";
         String moduleLocator= "//span[.='"+module+"']";
 
         BrowserUtils.waitForPresenceOfElement(By.xpath(tabLocator),5);
@@ -38,6 +38,11 @@ public abstract class BasePage {
 
         String actualSubTitle = SubTitle.getText();
         return actualSubTitle;
+    }
+
+    public String getAccountName_mtd(String accountName){
+        return Driver.get().findElement(By.xpath("//span[.='"+accountName+"']")).getText();
+
     }
 
 
