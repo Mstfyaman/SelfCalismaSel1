@@ -83,4 +83,45 @@ public class ProfilePage extends BasePage {
     @FindBy(xpath = "//input[@id='email']")
     public WebElement profilEmail_loc;
 
+    //========================================
+
+    @FindBy(css = "#school")
+    public WebElement schoolOrBootcamp;
+
+    @FindBy(css = "#degree")
+    public WebElement degreeOrCertificate;
+
+    @FindBy(css = "#study")
+    public WebElement study;
+
+    @FindBy(xpath = "(//input[@id='fromdate'])[2]")
+    public WebElement fromDate;
+
+    @FindBy(css = "#todateedu")
+    public WebElement toDate;
+
+    @FindBy(xpath = "(//textarea[@id='description'])[2]")
+    public WebElement programDescription;
+
+    @FindBy(xpath = "//button[@value=\"education\"]")
+    public WebElement addEducation;
+
+    @FindBy(xpath = "(//a[@class=\"btn btn-primary\"])[22]")
+    public WebElement viewProfile;
+
+    @FindBy(xpath = "//div[.='Robinson']")
+    public WebElement fullNameRabinson;
+
+    @FindBy(xpath = "//div[.='Developer']")
+    public WebElement jobSdet;
+
+    @FindBy(xpath = "//div[.='GHAN IT']")
+    public WebElement companyGhanIt;
+
+    @FindBy(xpath = "//span[.='Dashboard']")
+    public WebElement dashboardOdev4;
+
+
+
+
 }

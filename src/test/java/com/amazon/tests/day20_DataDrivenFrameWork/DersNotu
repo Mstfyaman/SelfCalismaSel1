@@ -1,0 +1,12 @@
+Data Driven Framework
+
+Cok sayida datayı dışarıdaki bir kaynaktan ( .xlx, xml, .csv, database)
+alarak tek bir test kodu ile testleri yürütmemize yarayan frameworktur
+
+Avantajları
+    Datada yapılan herhangi bir değişiklik koda etki etmez
+    Excel dosyasındaki verileri tek tek çekerek ayrı ayrı test etmemizi sağlar
+    Negatif ve pozitif datalar birlikte kullanılabilir
+
+DDF yapısı
+    Apache POI kutuphanesi mavenrepostroy.com
