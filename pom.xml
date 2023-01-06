@@ -33,6 +33,23 @@
         <scope>test</scope>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/com.google.zxing/javase -->
+    <dependency>
+        <groupId>com.google.zxing</groupId>
+        <artifactId>javase</artifactId>
+        <version>3.3.3</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/com.google.zxing/core -->
+    <dependency>
+        <groupId>com.google.zxing</groupId>
+        <artifactId>core</artifactId>
+        <version>3.3.3</version>
+    </dependency>
+
+
+
+
     <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
     <dependency>
         <groupId>com.github.javafaker</groupId>
@@ -60,6 +77,14 @@
         <groupId>org.apache.poi</groupId>
         <artifactId>poi-ooxml</artifactId>
         <version>5.2.2</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->
+    <!-- Burası sql için -->
+    <dependency>
+        <groupId>com.microsoft.sqlserver</groupId>
+        <artifactId>mssql-jdbc</artifactId>
+        <version>11.2.1.jre18</version>
     </dependency>
 
 
